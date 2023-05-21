@@ -11,7 +11,7 @@ import Homepage from './pages/homepage'
 
 function Home() {
     const [currentTab, setCurrentTab] = useState(0)
-    const [tabs, setTabs] = useState([<Homepage />, <News />, <Work />, <Member />, <Contact />, <Shop />])
+    const [tabs, setTabs] = useState([<Homepage key={0} />, <News key={1} />, <Work key={2} />, <Member key={3} />, <Contact key={4} />, <Shop key={5} />])
 
     useEffect(() => {
         console.log(tabs)
