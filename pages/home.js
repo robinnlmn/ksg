@@ -7,11 +7,11 @@ import Work from './pages/work'
 import Member from './pages/member'
 import Contact from './pages/contact'
 import Shop from './pages/shop'
-import Home from './pages/home'
+import Homepage from './pages/homepage'
 
-function home() {
+function Home() {
     const [currentTab, setCurrentTab] = useState(0)
-    const [tabs, setTabs] = useState([<Home />, <News />, <Work />, <Member />, <Contact />, <Shop />])
+    const [tabs, setTabs] = useState([<Homepage />, <News />, <Work />, <Member />, <Contact />, <Shop />])
 
     useEffect(() => {
         console.log(tabs)
@@ -90,4 +90,4 @@ function home() {
     )
 }
 
-export default home
+export default Home
