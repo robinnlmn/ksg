@@ -10,7 +10,7 @@
 }
 
 .header {
-    display: flex;    
+    display: flex;
     background: linear-gradient(0deg, rgba(192, 192, 192, 1) 0%, rgba(255, 255, 255, 1) 100%);
     border-radius: 6px 6px 0 0;
     width: 100%;
@@ -49,7 +49,7 @@
     background-color: #2AC940;
 }
 
-.content {  
+.content {
     background-color: #ECECEC;
     display: grid;
     grid-template-columns: repeat(2, .85fr) 1.3fr;
@@ -61,12 +61,52 @@
 
 .folders {
     border-right: 1px solid rgb(172, 172, 172);
-    overflow-y: scroll;
-    text-overflow: ellipsis;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.folders div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    padding-left: 5px;
+}
+
+.folders div p {
+    padding: 0px;
+    margin: 0px;
+    margin-right: 10px;
+    width: 30px;
+    text-align: center;
+    color: #EDEDED;
+    font-size: 11px;
+    border-radius: 6px/7px;
+    background-color: #B6B6B6;
+    height: 70%;
+}
+
+.selected {
+    background-color: #D8D8D8;
+}
+
+.selectedfile {
+    background-color: #3997FE;
 }
 
 .files {
     border-right: 1px solid rgb(172, 172, 172);
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.files div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1px;
+    padding-left: 5px;
 }
 
 .preview {
@@ -115,4 +155,22 @@
     height: 2px;
     background-color: #E4E4E4;
     width: 80%;
+}
+
+.draghandle {
+    cursor: grab;
+}
+
+.appgrid div {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.appgrid div:nth-child(1) {
+    left: calc(20px);
+}
+
+.appgrid div:nth-child(2) {
+    left: calc(20px + 128px);
 }

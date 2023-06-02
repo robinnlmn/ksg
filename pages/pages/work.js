@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import styles from '../../styles/Work.module.css'
+import Draggable from 'react-draggable';
 
 function Work() {
     const [data, setData] = useState([
@@ -91,48 +92,100 @@ function Work() {
             ]
         }
     ])
+    const [open, setOpen] = useState(true)
     const [currentFolder, setCurrentFolder] = useState(0)
     const [currentFile, setCurrentFile] = useState(0)
 
+    const [selectedFolder, setSelectedFolder] = useState(0);
+    const [selectedFile, setSelectedFile] = useState(0);
+
     const file = data[currentFolder].files[currentFile]
+
+    function closeButton() {
+        setCurrentFolder(0)
+        setCurrentFile(0)
+        setOpen(false)
+    }
+
+    function minimizeButton() {
+        setOpen(false)
+    }
+
+    function fullScreenButton() {
+
+    }
 
     return (
         <div className={styles.work}>
-            <div className={styles.fs}>
-                <div className={styles.header}>
-                    <div className={styles.buttons}>
-                        <button></button>
-                        <button></button>
-                        <button></button>
-                    </div>
-                    <p>Archive</p>
+            <div className={styles.appgrid}>
+                <div onDoubleClick={() => setOpen(true)}>
+                    <img src="/images/finder.png" width={64} height={64} />
                 </div>
-                <div className={styles.content}>
-                    <div className={styles.folders}>
-                        {data.map((item, index) => {
-                            return <div key={index} onClick={() => setCurrentFolder(index)} >{item.name}</div>
-                        })}
-                    </div>
-                    <div className={styles.files}>
-                        {data[currentFolder].files.map((item, index) => {
-                            return <div key={index} onClick={() => setCurrentFile(index)}>{item.name}</div>
-                        })}
-                    </div>
-                    <div className={styles.preview}>
-                        <img src={file.img} alt="img" className={styles.image}/>
-                        <p className={styles.filename}>{file.name}</p>
-                        <p>{file.type}</p>
-
-                        <br></br>
-
-                        <p className={styles.filecreated}><strong>Created </strong> {file.created}</p>
-                        <div className={styles.seperator}></div>
-                        <p className={styles.filelink}><strong>Link </strong> <a href={file.link}>{file.name}</a></p>
-                        {file.embed}
+                <div onDoubleClick={() => setOpen(true)}>
+                    <img src="/images/finder.png" width={64} height={64} />
                 </div>
             </div>
+
+            {open ?
+                <Draggable axis='both'>
+                    <div className={styles.fs}>
+                        <div className={[styles.header, styles.draghandle].join(' ')}>
+                            <div className={styles.buttons}>
+                                <button onClick={() => closeButton()}></button>
+                                <button onClick={() => minimizeButton()}></button>
+                                <button onClick={() => fullscreenButton()}></button>
+                            </div>
+                            <p>Archive</p>
+                        </div>
+                        <div className={styles.content}>
+                            <div className={styles.folders}>
+                                {data.map((item, index) => {
+                                    const folderClass = index === selectedFolder ? styles.selected : '';
+                                    return (
+                                        <div
+                                            key={index}
+                                            className={`${styles.folder} ${folderClass}`}
+                                            onClick={() => { setSelectedFolder(index); setCurrentFolder(index) }}
+                                        >
+                                            {item.name}
+                                            <p>{item.files.length}</p>
+                                        </div>
+                                    );
+                                })}
+                            </div>
+
+                            <div className={styles.files}>
+                                {data[selectedFolder].files.map((item, index) => {
+                                    const fileClass = index === selectedFile ? styles.selectedfile : '';
+                                    return (
+                                        <div
+                                            key={index}
+                                            className={`${styles.file} ${fileClass}`}
+                                            onClick={() => { setSelectedFile(index); setCurrentFile(index) }}
+                                        >
+                                            {item.name}
+                                        </div>
+                                    );
+                                })}
+                            </div>
+
+                            <div className={styles.preview}>
+                                <img src={file.img} alt="img" className={styles.image} />
+                                <p className={styles.filename}>{file.name}</p>
+                                <p>{file.type}</p>
+
+                                <br></br>
+
+                                <p className={styles.filecreated}><strong>Created </strong> {file.created}</p>
+                                <div className={styles.seperator}></div>
+                                <p className={styles.filelink}><strong>Link </strong> <a href={file.link}>{file.name}</a></p>
+                                {file.embed}
+                            </div>
+                        </div>
+                    </div>
+                </Draggable> : <></>
+            }
         </div>
-    </div>
     )
 }
 
