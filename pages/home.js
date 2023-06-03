@@ -3,15 +3,14 @@ import React, { useEffect, useState } from 'react'
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
 import News from './pages/news'
-import Work from './pages/work'
+import Work from './pages/ksg'
 import Member from './pages/member'
 import Contact from './pages/contact'
 import Shop from './pages/shop'
-import Homepage from './pages/homepage'
 
 function Home() {
-    const [currentTab, setCurrentTab] = useState(0)
-    const [tabs, setTabs] = useState([<Homepage key={0} />, <News key={1} />, <Work key={2} />, <Member key={3} />, <Contact key={4} />, <Shop key={5} />])
+    const [currentTab, setCurrentTab] = useState(2)
+    const [tabs, setTabs] = useState([<></>, <News key={1} />, <Work key={2} />, <Member key={3} />, <Contact key={4} />, <Shop key={5} />])
 
     useEffect(() => {
         console.log(tabs)
@@ -29,18 +28,17 @@ function Home() {
 
             <main className={styles.main}>
                 <div className={styles.header}>
-                    <Image src="/images/KSG4E.png" alt="Vercel Logo" width={64} height={64} className={styles.headerlogo} onClick={() => setCurrentTab(0)} />
                     <div className={styles.selector}>
                         <div className={styles.tab} onClick={() => setCurrentTab(1)}>
                             {currentTab == 1 ? <p style={{ borderBottom: '1px solid black' }}>news</p> : <p>news</p>}
                         </div>
 
-                        <div className={styles.tab} onClick={() => setCurrentTab(2)}>
-                            {currentTab == 2 ? <p style={{ borderBottom: '1px solid black' }}>work</p> : <p>work</p>}
-                        </div>
-
                         <div className={styles.tab} onClick={() => setCurrentTab(3)}>
                             {currentTab == 3 ? <p style={{ borderBottom: '1px solid black' }}>member</p> : <p>member</p>}
+                        </div>
+
+                        <div className={styles.tab} onClick={() => setCurrentTab(2)}>
+                            <Image src="/images/KSG4E.png" alt="Vercel Logo" width={64} height={64} className={styles.headerlogo} onClick={() => setCurrentTab(0)} />
                         </div>
 
                         <div className={styles.tab} onClick={() => setCurrentTab(4)}>
