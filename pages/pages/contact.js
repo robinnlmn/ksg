@@ -4,7 +4,7 @@ import styles from '../../styles/Home.module.css'
 function Contact() {
     return (
         <div className={styles.contact}>
-            <form action="https://formsubmit.co/c5705b4e8ce652521920457b2428864c" method="POST" className={styles.form}>
+            <form action="https://formsubmit.co/7b279fb98ae888bf086dd566ad32f481" method="POST" className={styles.form}>
                 {/* <form action="/api/form" method="POST" className={styles.form}> */}
                 <h1>contact</h1>
                 <div className={styles.formRow}>
