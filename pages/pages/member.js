@@ -50,7 +50,7 @@ function Member() {
     <div className={styles.Member}>
       <div className={styles.membercontainer}>
         {member.map((member, index) => (
-          <div className={styles.member}>
+          <div className={styles.member} key={index}>
             <Image
               src={"/images/member/" + member.img + ".jpg"}
               alt="Member"
