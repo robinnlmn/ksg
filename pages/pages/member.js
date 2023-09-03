@@ -51,10 +51,14 @@ function Member() {
       <div className={styles.membercontainer}>
         {member.map((member, index) => (
           <div className={styles.member}>
-            <img
+            <Image
               src={"/images/member/" + member.img + ".jpg"}
               alt="Member"
               className={styles.memberimage}
+              width={0}
+              height={0}
+              sizes="100vw"
+              style={{ width: "100%", height: "auto" }}
             />
             <p className={styles.membername}>{member.name}</p>
             <p className={styles.membertitle}>{member.title}</p>

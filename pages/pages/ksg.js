@@ -210,7 +210,7 @@ function Work() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
-    }, 1000);
+    }, 1500);
 
     return () => {
       clearInterval(interval);
