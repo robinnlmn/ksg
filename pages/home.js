@@ -91,8 +91,8 @@ function Home() {
             <Image
               src="/images/instagram.png"
               alt="Vercel Logo"
-              width={35}
-              height={35}
+              width={31}
+              height={31}
             />
           </span>
         </a>
@@ -119,8 +119,8 @@ function Home() {
             <Image
               src="/images/spotify.png"
               alt="Vercel Logo"
-              width={35}
-              height={35}
+              width={42}
+              height={42}
             />
           </span>
         </a>
@@ -133,8 +133,8 @@ function Home() {
             <Image
               src="/images/tiktok.svg"
               alt="Vercel Logo"
-              width={35}
-              height={35}
+              width={28}
+              height={28}
             />
           </span>
         </a>

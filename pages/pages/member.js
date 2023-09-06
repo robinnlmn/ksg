@@ -36,7 +36,7 @@ function Member() {
     },
     {
       img: "ody",
-      name: "Odysseus Tessmann",
+      name: "Odysseus",
       title: "Producer",
     },
     {
@@ -59,9 +59,16 @@ function Member() {
               height={0}
               sizes="100vw"
               style={{ width: "100%", height: "auto" }}
+              // onClick={(window.location = `/members/${member.img}`)}
             />
-            <p className={styles.membername}>{member.name}</p>
-            <p className={styles.membertitle}>{member.title}</p>
+            <div className={styles.memberinfocontainer}>
+              <div className={styles.membernamecontainer}>
+                <p className={styles.membername}>{member.name}</p>
+                <p className={styles.membertitle}>{member.title}</p>
+              </div>
+
+              <a href={`/members/${member.img}`}>&rarr;</a>
+            </div>
           </div>
         ))}
 
