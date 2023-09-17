@@ -15,6 +15,7 @@
   border: 1px solid rgb(172, 172, 172);
   border-radius: 6px;
   width: 500px;
+  z-index: 14;
 }
 
 .header {
@@ -202,12 +203,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: -2;
+  cursor: pointer;
 }
 
 .appgrid div p {
   margin: -7.5px;
   font-size: 14px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .appgrid div:nth-child(1) {
@@ -228,4 +232,23 @@
   text-align: center;
   width: 100px;
   z-index: -1;
+}
+
+@media (max-width: 450px) {
+  .fs {
+    width: 90vw;
+  }
+
+  .header {
+    height: 25px;
+  }
+
+  .buttons button {
+    transform: scale(0.8);
+    height: 22px;
+    border: none;
+    border-radius: 50%;
+    margin-left: 3px;
+    margin-top: 1px;
+  }
 }

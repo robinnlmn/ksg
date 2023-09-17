@@ -166,6 +166,9 @@ function Work() {
   ]);
   const [openWork, setOpenWork] = useState(false);
   const [openMerch, setOpenMerch] = useState(false);
+
+  const [isMobile, setIsMobile] = useState(false);
+
   const [currentFolder, setCurrentFolder] = useState(0);
   const [currentFile, setCurrentFile] = useState(0);
 
@@ -210,7 +213,16 @@ function Work() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentTime(new Date().toLocaleTimeString());
-    }, 3000);
+    }, 50);
+
+    var width = document.body.offsetWidth;
+
+    if (width < 450) {
+      setOpenMerch(true);
+      setOpenWork(true);
+
+      setIsMobile(true);
+    }
 
     return () => {
       clearInterval(interval);
@@ -219,23 +231,187 @@ function Work() {
 
   return (
     <div className={styles.work}>
-      <div className={styles.appgrid}>
-        <Draggable axis="both">
-          <div onDoubleClick={() => setOpenWork(true)}>
-            <img src="/images/finder.png" width={64} height={64} />
-            <p>WORK</p>
+      {isMobile ? (
+        <div style={{ marginTop: 20 }}>
+          <div className={styles.appgrid}>
+            <Draggable axis="both">
+              <div
+                style={{ cursor: "pointer" }}
+                onClick={() => {
+                  setOpenWork(true);
+                  // setOpenMerch(false);
+                }}
+              >
+                <img src="/images/finder.png" width={64} height={64} />
+                <p>WORK</p>
+              </div>
+            </Draggable>
+            <Draggable axis="both">
+              <div
+                onClick={() => {
+                  setOpenMerch(true);
+                  // setOpenWork(false);
+                }}
+              >
+                <img src="/images/finder.png" width={64} height={64} />
+                <p>MERCH</p>
+              </div>
+            </Draggable>
           </div>
-        </Draggable>
-        <Draggable axis="both">
-          <div onDoubleClick={() => setOpenMerch(true)}>
-            <img src="/images/finder.png" width={64} height={64} />
-            <p>MERCH</p>
-          </div>
-        </Draggable>
-      </div>
+          {openWork ? (
+            <div className={styles.fs}>
+              <div className={[styles.header, styles.draghandle].join(" ")}>
+                <div className={styles.buttons}>
+                  <button onClick={() => closeButtonWork()}></button>
+                  <button onClick={() => minimizeButtonWork()}></button>
+                  <button></button>
+                </div>
+                <p>WORK</p>
+              </div>
+              <div className={styles.content}>
+                <div className={styles.folders}>
+                  {data.map((item, index) => {
+                    const folderClass =
+                      index === selectedFolder ? styles.selected : "";
+                    return (
+                      <div
+                        key={index}
+                        className={`${styles.folder} ${folderClass}`}
+                        onClick={() => {
+                          setSelectedFolder(index);
+                          setCurrentFolder(index);
+                        }}
+                      >
+                        {item.name}
+                        <p>{item.files.length}</p>
+                      </div>
+                    );
+                  })}
+                </div>
 
-      {openWork ? (
-        <Draggable axis="both">
+                <div className={styles.files}>
+                  {data[selectedFolder].files.map((item, index) => {
+                    const fileClass =
+                      index === selectedFile ? styles.selectedfile : "";
+                    return (
+                      <div
+                        key={index}
+                        className={`${styles.file} ${fileClass}`}
+                        onClick={() => {
+                          setSelectedFile(index);
+                          setCurrentFile(index);
+                        }}
+                      >
+                        <p>{item.name}</p>
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className={styles.preview}>
+                  <img src={file.img} alt="img" className={styles.image} />
+                  <p className={styles.filename}>{file.name}</p>
+                  <p>{file.type}</p>
+
+                  <br></br>
+
+                  <p className={styles.filecreated}>
+                    <strong>RELEASE </strong> {file.created}
+                  </p>
+                  <div className={styles.seperator}></div>
+                  <p className={styles.filelink}>
+                    <strong>LINK </strong> <a href={file.link}>{file.name}</a>
+                  </p>
+                  {file.embed}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <></>
+          )}
+          <br></br>
+          {openMerch ? (
+            <div className={styles.fs}>
+              <div className={[styles.header, styles.draghandle].join(" ")}>
+                <div className={styles.buttons}>
+                  <button onClick={() => closeButtonMerch()}></button>
+                  <button onClick={() => minimizeButtonMerch()}></button>
+                  <button></button>
+                </div>
+                <p>MERCH</p>
+              </div>
+              <div className={styles.content}>
+                <div className={styles.files}>
+                  {dataMerch.map((item, index) => {
+                    const fileClass =
+                      index === selectedFileMerch ? styles.selectedfile : "";
+                    return (
+                      <div
+                        key={index}
+                        className={`${styles.file} ${fileClass}`}
+                        onClick={() => {
+                          setSelectedFileMerch(index);
+                          setCurrentFileMerch(index);
+                        }}
+                      >
+                        {item.name}
+                      </div>
+                    );
+                  })}
+                </div>
+
+                <div className={styles.preview}>
+                  <img src={fileMerch.img} alt="img" className={styles.image} />
+                  <p className={styles.filename}>{fileMerch.name}</p>
+                  <p>{fileMerch.type}</p>
+
+                  <br></br>
+
+                  <p className={styles.filecreated}>
+                    <strong>RELEASE </strong> {fileMerch.created}
+                  </p>
+                  <div className={styles.seperator}></div>
+                  <p className={styles.filelink}>
+                    <strong>LINK </strong>{" "}
+                    <a href={fileMerch.link}>{fileMerch.name}</a>
+                  </p>
+                  {fileMerch.embed}
+                </div>
+              </div>
+            </div>
+          ) : (
+            <></>
+          )}
+        </div>
+      ) : (
+        <div className={styles.appgrid}>
+          <Draggable axis="both">
+            <div
+              onDoubleClickCapture={() => {
+                setOpenWork(true);
+                // setOpenMerch(false);
+              }}
+            >
+              <img src="/images/finder.png" width={64} height={64} />
+              <p>WORK</p>
+            </div>
+          </Draggable>
+          <Draggable axis="both">
+            <div
+              onDoubleClick={() => {
+                setOpenMerch(true);
+                // setOpenWork(false);
+              }}
+            >
+              <img src="/images/finder.png" width={64} height={64} />
+              <p>MERCH</p>
+            </div>
+          </Draggable>
+        </div>
+      )}
+
+      {openWork && !isMobile ? (
+        <Draggable axis="both" defaultPosition={{ x: 150, y: 0 }}>
           <div className={styles.fs}>
             <div className={[styles.header, styles.draghandle].join(" ")}>
               <div className={styles.buttons}>
@@ -308,8 +484,8 @@ function Work() {
         <></>
       )}
 
-      {openMerch ? (
-        <Draggable axis="both">
+      {openMerch && !isMobile ? (
+        <Draggable axis="both" defaultPosition={{ x: 0, y: 300 }}>
           <div className={styles.fs}>
             <div className={[styles.header, styles.draghandle].join(" ")}>
               <div className={styles.buttons}>
@@ -364,7 +540,6 @@ function Work() {
       )}
 
       <p className={styles.currentTime}>{currentTime}</p>
-
       {/* <img src="/images/finder.png" width={64} height={64} onDoubleClick={() => { window.location = "/bamboozle" }} /> */}
     </div>
   );
