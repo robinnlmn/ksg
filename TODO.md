@@ -1,1 +1,2 @@
-- FS Position verschiebung
+- FS Text too big
+- Contact Message resize

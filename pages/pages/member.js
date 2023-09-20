@@ -6,42 +6,42 @@ function Member() {
   const member = [
     {
       img: "allon",
-      name: "Allon Kirma",
+      name: "ALLON",
       title: "Management",
     },
     {
       img: "bene",
-      name: "Benedikt Krumme",
+      name: "BENE",
       title: "Design",
     },
     {
       img: "felix",
-      name: "Felix Rufus",
+      name: "FELIX",
       title: "Management",
     },
     {
       img: "henrik",
-      name: "Henrik Lehmann",
+      name: "HENRIK",
       title: "Media",
     },
     {
       img: "joni",
-      name: "Jonathan KA WIE",
+      name: "JONA¥A",
       title: "Producer",
     },
     {
       img: "kyran",
-      name: "Kyran El-Bozo",
+      name: "KA¥",
       title: "Media",
     },
     {
       img: "ody",
-      name: "Odysseus",
+      name: "OD¥",
       title: "Producer",
     },
     {
       img: "yang",
-      name: "Yang Peduto",
+      name: "¥ANG",
       title: "Design",
     },
   ];

@@ -222,7 +222,10 @@ function Work() {
       setOpenWork(true);
 
       setIsMobile(true);
+      console.log("MOBILE");
     }
+
+    console.log(isMobile);
 
     return () => {
       clearInterval(interval);
@@ -266,7 +269,7 @@ function Work() {
                   <button onClick={() => minimizeButtonWork()}></button>
                   <button></button>
                 </div>
-                <p>WORK</p>
+                <p>{data[currentFolder].name}</p>
               </div>
               <div className={styles.content}>
                 <div className={styles.folders}>
@@ -384,34 +387,30 @@ function Work() {
           )}
         </div>
       ) : (
+        <></>
+      )}
+
+      {!isMobile ? (
         <div className={styles.appgrid}>
           <Draggable axis="both">
-            <div
-              onDoubleClickCapture={() => {
-                setOpenWork(true);
-                // setOpenMerch(false);
-              }}
-            >
+            <div onDoubleClick={() => setOpenWork(true)}>
               <img src="/images/finder.png" width={64} height={64} />
               <p>WORK</p>
             </div>
           </Draggable>
           <Draggable axis="both">
-            <div
-              onDoubleClick={() => {
-                setOpenMerch(true);
-                // setOpenWork(false);
-              }}
-            >
+            <div onDoubleClick={() => setOpenMerch(true)}>
               <img src="/images/finder.png" width={64} height={64} />
               <p>MERCH</p>
             </div>
           </Draggable>
         </div>
+      ) : (
+        <></>
       )}
 
       {openWork && !isMobile ? (
-        <Draggable axis="both" defaultPosition={{ x: 150, y: 0 }}>
+        <Draggable axis="both" positionOffset={{ x: -75, y: -75 }}>
           <div className={styles.fs}>
             <div className={[styles.header, styles.draghandle].join(" ")}>
               <div className={styles.buttons}>
@@ -485,7 +484,7 @@ function Work() {
       )}
 
       {openMerch && !isMobile ? (
-        <Draggable axis="both" defaultPosition={{ x: 0, y: 300 }}>
+        <Draggable axis="both" positionOffset={{ x: 0, y: 0 }}>
           <div className={styles.fs}>
             <div className={[styles.header, styles.draghandle].join(" ")}>
               <div className={styles.buttons}>
