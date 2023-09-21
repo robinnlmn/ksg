@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function Home() {
   function openSite() {
@@ -33,6 +34,7 @@ export default function Home() {
           id="image"
           className={styles.ksglogo}
         />
+        {/* <FontAwesomeIcon icon="envelope" size="lg" /> */}
       </main>
       {/* <footer className={styles.footer}>
         <a

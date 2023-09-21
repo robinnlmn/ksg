@@ -20,6 +20,17 @@
   overflow: hidden;
 }
 
+@media (max-width: 400px) {
+  .fs {
+    border: 1px solid rgb(172, 172, 172);
+    border-radius: 6px;
+    width: 500px;
+    z-index: 14;
+    position: static;
+    overflow: hidden;
+  }
+}
+
 .header {
   display: flex;
   background: linear-gradient(
@@ -159,6 +170,17 @@
 
 .filename {
   font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 215px;
+  text-align: center;
+}
+
+@media (max-width: 400px) {
+  .filename {
+    width: 110px;
+  }
 }
 
 .filecreated {
@@ -220,6 +242,39 @@
 
 .appgrid div:nth-child(2) {
   left: calc(128px);
+}
+
+.mobileAppGrid {
+  display: flex;
+  width: 200px;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 100px;
+}
+
+.mobileAppGrid div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* z-index: -1; */
+}
+
+.mobileAppGrid div p {
+  margin: -7.5px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.mobileFsGrid {
+  margin-top: 185px;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .currentTime {

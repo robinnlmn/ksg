@@ -235,41 +235,35 @@ function Work() {
   return (
     <div className={styles.work}>
       {isMobile ? (
-        <div style={{ marginTop: 20 }}>
-          <div className={styles.appgrid}>
-            <Draggable axis="both">
-              <div
-                style={{ cursor: "pointer" }}
-                onClick={() => {
-                  setOpenWork(true);
-                  // setOpenMerch(false);
-                }}
-              >
-                <img src="/images/finder.png" width={64} height={64} />
-                <p>WORK</p>
-              </div>
-            </Draggable>
-            <Draggable axis="both">
-              <div
-                onClick={() => {
-                  setOpenMerch(true);
-                  // setOpenWork(false);
-                }}
-              >
-                <img src="/images/finder.png" width={64} height={64} />
-                <p>MERCH</p>
-              </div>
-            </Draggable>
+        <div className={styles.mobileAppGrid}>
+          <div onClick={() => console.log("CLICK")}>
+            <div onDoubleClick={() => setOpenWork(true)}>
+              <img src="/images/finder.png" width={64} height={64} />
+              <p>WORK</p>
+            </div>
           </div>
+          <div>
+            <div onDoubleClick={() => setOpenMerch(true)}>
+              <img src="/images/finder.png" width={64} height={64} />
+              <p>MERCH</p>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <></>
+      )}
+
+      {isMobile ? (
+        <div className={styles.mobileFsGrid}>
           {openWork ? (
             <div className={styles.fs}>
-              <div className={[styles.header, styles.draghandle].join(" ")}>
+              <div className={styles.header}>
                 <div className={styles.buttons}>
                   <button onClick={() => closeButtonWork()}></button>
                   <button onClick={() => minimizeButtonWork()}></button>
                   <button></button>
                 </div>
-                <p>{data[currentFolder].name}</p>
+                <p>WORK</p>
               </div>
               <div className={styles.content}>
                 <div className={styles.folders}>
@@ -389,6 +383,8 @@ function Work() {
       ) : (
         <></>
       )}
+
+      {/* PC VIEW */}
 
       {!isMobile ? (
         <div className={styles.appgrid}>

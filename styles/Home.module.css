@@ -375,13 +375,13 @@
   width: 100%;
   min-width: 100%;
   max-width: 100%;
-  height: 32.75px;
+  height: 35px;
   padding: 0.4rem;
   border-radius: 10px;
   font-size: 17px;
   border: none;
-  /* background-color: rgb(247, 247, 247); */
   resize: none;
+  /* background-color: rgb(247, 247, 247); */
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
