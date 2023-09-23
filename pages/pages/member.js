@@ -50,7 +50,11 @@ function Member() {
     <div className={styles.Member}>
       <div className={styles.membercontainer}>
         {member.map((member, index) => (
-          <div className={styles.member} key={index}>
+          <a
+            className={styles.member}
+            key={index}
+            href={`/members/${member.img}`}
+          >
             <Image
               src={"/images/member/" + member.img + ".jpg"}
               alt="Member"
@@ -67,9 +71,9 @@ function Member() {
                 <p className={styles.membertitle}>{member.title}</p>
               </div>
 
-              <a href={`/members/${member.img}`}>&rarr;</a>
+              {/* <a href={`/members/${member.img}`}>&rarr;</a> */}
             </div>
-          </div>
+          </a>
         ))}
 
         {/* <div className={styles.member}>

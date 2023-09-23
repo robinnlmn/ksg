@@ -41,7 +41,7 @@ function Contact() {
           <textarea
             name="message"
             required
-            placeholder="how can we help"
+            placeholder="your message"
             id="textarea"
             onInput={() => resizeTextArea()}
           ></textarea>

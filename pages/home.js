@@ -115,8 +115,8 @@ function Home() {
             <Image
               src="/images/spotify.png"
               alt="Vercel Logo"
-              width={42}
-              height={42}
+              width={30}
+              height={30}
             />
           </span>
         </a>

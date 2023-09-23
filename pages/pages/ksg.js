@@ -11,63 +11,63 @@ function Work() {
           name: "RIOT!.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
-          created: "26/05/23",
+          created: "30/05/23",
           link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
         },
         {
           name: "CAROL.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
-          created: "26/05/23",
+          created: "30/05/23",
           link: "https://open.spotify.com/track/7ixHDGkDq4mR0JbrtRn0Ue?si=5d8a28a24b86411a",
         },
         {
           name: "WALK OF SHAME.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
-          created: "26/05/23",
+          created: "30/05/23",
           link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
         },
         {
           name: "OMDS.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
-          created: "26/05/23",
+          created: "30/05/23",
           link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
         },
         {
           name: "COMPLAINT?.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
-          created: "26/05/23",
+          created: "30/05/23",
           link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
         },
         {
           name: "BAPES.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
-          created: "26/05/23",
+          created: "30/05/23",
           link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
         },
         {
           name: "THE ALCHEMIST.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
-          created: "26/05/23",
+          created: "30/05/23",
           link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
         },
         {
           name: "HOMIES BEGGED.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
-          created: "26/05/23",
+          created: "30/05/23",
           link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
         },
         {
           name: "BAPES.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
-          created: "26/05/23",
+          created: "30/05/23",
           link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
         },
       ],
@@ -79,71 +79,104 @@ function Work() {
           name: "uno/dos.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02fc5bd31dbca1c1b59363c0af",
           type: "WAV Audio File",
-          created: "26/05/11",
+          created: "11/05/23",
           link: "https://open.spotify.com/track/4y79H5fe8Z9bYKZFblhufm?si=1640d0f5ca004a47",
         },
         {
           name: "what's the energy like.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02fc5bd31dbca1c1b59363c0af",
           type: "WAV Audio File",
-          created: "26/05/11",
+          created: "11/05/23",
           link: "https://open.spotify.com/track/4gIrUu4gfdcAi00ncmmjFS?si=2006878428414215",
         },
         {
           name: "ooo.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02fc5bd31dbca1c1b59363c0af",
           type: "WAV Audio File",
-          created: "26/05/11",
+          created: "11/05/23",
           link: "https://open.spotify.com/track/4gIrUu4gfdcAi00ncmmjFS?si=84daef1ccf534e50",
         },
         {
           name: "nickname.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02fc5bd31dbca1c1b59363c0af",
           type: "WAV Audio File",
-          created: "26/05/11",
+          created: "11/05/23",
           link: "https://open.spotify.com/track/49fAA8RHsKmRkr33JwqdXc?si=e11afc53fc9b4b09",
         },
         {
           name: "street piano.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02fc5bd31dbca1c1b59363c0af",
           type: "WAV Audio File",
-          created: "26/05/11",
+          created: "11/05/23",
           link: "https://open.spotify.com/track/62AMWmv5sPgVFSg0rhxfqt?si=4f9784f8fb3042cf",
         },
         {
           name: "can't change the place.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02fc5bd31dbca1c1b59363c0af",
           type: "WAV Audio File",
-          created: "26/05/11",
+          created: "11/05/23",
           link: "https://open.spotify.com/track/69U8nlRnq7JdRb9waeXVyh?si=c8f8c8e26b50469e",
         },
         {
           name: "underwater.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02fc5bd31dbca1c1b59363c0af",
           type: "WAV Audio File",
-          created: "26/05/11",
+          created: "11/05/23",
           link: "https://open.spotify.com/track/4GrSC3m2oFI5wNfmQCU04g?si=65087d4823cd43c1",
         },
         {
           name: "in gold.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02fc5bd31dbca1c1b59363c0af",
           type: "WAV Audio File",
-          created: "26/05/11",
+          created: "11/05/23",
           link: "https://open.spotify.com/track/6537kRSdeUDjXRW5MmuiSr?si=4c5f442921f94bdf",
         },
         {
           name: "low//fi.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02fc5bd31dbca1c1b59363c0af",
           type: "WAV Audio File",
-          created: "26/05/11",
+          created: "11/05/23",
           link: "https://open.spotify.com/track/4VMb5w9jfLn9EvYCa8FYjc?si=887f255e5344461f",
         },
         {
           name: "GUNN TYPE BEAT.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02fc5bd31dbca1c1b59363c0af",
           type: "WAV Audio File",
-          created: "26/05/11",
+          created: "11/05/23",
           link: "https://open.spotify.com/track/1iJGEgpzt1suxWjbpAPeJj?si=f6084428ac404653",
+        },
+      ],
+    },
+    {
+      name: "Mr. Robot",
+      files: [
+        {
+          name: "Deli.wav",
+          img: "https://i.scdn.co/image/ab67616d00001e028a31a2471441951b49a8d518",
+          type: "WAV Audio File",
+          created: "26/05/11",
+          link: "https://open.spotify.com/intl-de/track/3pRyXILZXvHt43GyZ8x7pQ?si=2e96115bec7243e9",
+        },
+        {
+          name: "Nocturnal.wav",
+          img: "https://i.scdn.co/image/ab67616d00001e028a31a2471441951b49a8d518",
+          type: "WAV Audio File",
+          created: "26/05/11",
+          link: "https://open.spotify.com/intl-de/track/218r67BNZRjG5TCyo04zEE?si=cce065cdbf6341ce",
+        },
+        {
+          name: "To Break A Heart.wav",
+          img: "https://i.scdn.co/image/ab67616d00001e028a31a2471441951b49a8d518",
+          type: "WAV Audio File",
+          created: "26/05/11",
+          link: "https://open.spotify.com/intl-de/track/0ZVZEgm17QnpDR2VZ3oXjc?si=4f9138c711e2471a",
+        },
+        {
+          name: "Flowerstreet.wav",
+          img: "https://i.scdn.co/image/ab67616d00001e028a31a2471441951b49a8d518",
+          type: "WAV Audio File",
+          created: "26/05/11",
+          link: "https://open.spotify.com/intl-de/track/1gCXJkCOBdwrGYKhJDDZZ4?si=02848a821c9048ae",
         },
       ],
     },
@@ -218,8 +251,8 @@ function Work() {
     var width = document.body.offsetWidth;
 
     if (width < 450) {
-      setOpenMerch(true);
-      setOpenWork(true);
+      setOpenMerch(false);
+      setOpenWork(false);
 
       setIsMobile(true);
       console.log("MOBILE");
@@ -239,13 +272,13 @@ function Work() {
           <div onClick={() => console.log("CLICK")}>
             <div onDoubleClick={() => setOpenWork(true)}>
               <img src="/images/finder.png" width={64} height={64} />
-              <p>WORK</p>
+              <p>MUSIC</p>
             </div>
           </div>
           <div>
             <div onDoubleClick={() => setOpenMerch(true)}>
               <img src="/images/finder.png" width={64} height={64} />
-              <p>MERCH</p>
+              <p>DATA</p>
             </div>
           </div>
         </div>
@@ -263,7 +296,7 @@ function Work() {
                   <button onClick={() => minimizeButtonWork()}></button>
                   <button></button>
                 </div>
-                <p>WORK</p>
+                <p>{data[selectedFolder].name}</p>
               </div>
               <div className={styles.content}>
                 <div className={styles.folders}>
@@ -279,8 +312,12 @@ function Work() {
                           setCurrentFolder(index);
                         }}
                       >
-                        {item.name}
-                        <p>{item.files.length}</p>
+                        <label>{item.name}</label>
+                        {item.files.length < 10 ? (
+                          <p>0{item.files.length}</p>
+                        ) : (
+                          <p>{item.files.length}</p>
+                        )}
                       </div>
                     );
                   })}
@@ -326,7 +363,6 @@ function Work() {
           ) : (
             <></>
           )}
-          <br></br>
           {openMerch ? (
             <div className={styles.fs}>
               <div className={[styles.header, styles.draghandle].join(" ")}>
@@ -335,7 +371,7 @@ function Work() {
                   <button onClick={() => minimizeButtonMerch()}></button>
                   <button></button>
                 </div>
-                <p>MERCH</p>
+                <p>DATA</p>
               </div>
               <div className={styles.content}>
                 <div className={styles.files}>
@@ -391,13 +427,13 @@ function Work() {
           <Draggable axis="both">
             <div onDoubleClick={() => setOpenWork(true)}>
               <img src="/images/finder.png" width={64} height={64} />
-              <p>WORK</p>
+              <p>MUSIC</p>
             </div>
           </Draggable>
           <Draggable axis="both">
             <div onDoubleClick={() => setOpenMerch(true)}>
               <img src="/images/finder.png" width={64} height={64} />
-              <p>MERCH</p>
+              <p>DATA</p>
             </div>
           </Draggable>
         </div>
@@ -406,7 +442,7 @@ function Work() {
       )}
 
       {openWork && !isMobile ? (
-        <Draggable axis="both" positionOffset={{ x: -75, y: -75 }}>
+        <Draggable axis="both" positionOffset={{ x: 0, y: 0 }}>
           <div className={styles.fs}>
             <div className={[styles.header, styles.draghandle].join(" ")}>
               <div className={styles.buttons}>
@@ -414,7 +450,7 @@ function Work() {
                 <button onClick={() => minimizeButtonWork()}></button>
                 <button></button>
               </div>
-              <p>WORK</p>
+              <p>MUSIC</p>
             </div>
             <div className={styles.content}>
               <div className={styles.folders}>
@@ -431,7 +467,11 @@ function Work() {
                       }}
                     >
                       {item.name}
-                      <p>{item.files.length}</p>
+                      {item.files.length < 10 ? (
+                        <p>0{item.files.length}</p>
+                      ) : (
+                        <p>{item.files.length}</p>
+                      )}
                     </div>
                   );
                 })}

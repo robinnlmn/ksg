@@ -54,6 +54,9 @@
   color: #555255;
   margin-top: 0;
   margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttons button {
@@ -117,6 +120,36 @@
   height: 70%;
 }
 
+@media (max-width: 400px) {
+  .folders div p {
+    /* display: none; */
+  }
+
+  .folders div label {
+    width: calc(105px - 30px);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .folders {
+    width: 105px;
+  }
+
+  .files {
+    width: 110px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* .files p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  } */
+}
+
 .selected {
   background-color: #d8d8d8;
 }
@@ -131,6 +164,7 @@
   font-size: 13px;
   max-width: 1fr;
   flex-wrap: wrap;
+  text-overflow: ellipsis;
 }
 
 .files div {
@@ -249,7 +283,7 @@
   width: 200px;
   justify-content: space-evenly;
   position: absolute;
-  top: 100px;
+  top: 125px;
 }
 
 .mobileAppGrid div {
@@ -266,20 +300,28 @@
 }
 
 .mobileFsGrid {
-  margin-top: 185px;
+  margin-top: 210px;
+  height: 100vh;
   /* position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); */
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  align-items: start;
+  justify-content: start;
+}
+
+@media (max-width: 400px) {
+  .fs {
+    margin-bottom: 10px;
+  }
 }
 
 .currentTime {
   position: absolute;
-  bottom: 100px;
+  top: 70px;
+  /* left: 10px; */
   font-size: 22px;
   font-weight: 600;
   color: white;
