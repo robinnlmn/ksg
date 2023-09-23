@@ -318,14 +318,21 @@
   }
 }
 
+@font-face {
+  font-family: "CustomFont";
+  src: url("/digital.ttf") format("truetype");
+  /* Add additional font formats here if needed (e.g., woff, woff2) */
+}
+
 .currentTime {
   position: absolute;
-  top: 70px;
+  top: 75px;
   /* left: 10px; */
   font-size: 22px;
   font-weight: 600;
-  color: white;
-  background-color: black;
+  font-family: "CustomFont", sans-serif;
+  color: black;
+  /* background-color: black; */
   text-align: center;
   width: 100px;
   z-index: -1;

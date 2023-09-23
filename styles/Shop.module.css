@@ -7,7 +7,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 110px;
 }
 
 .shopgrid {
@@ -20,8 +19,8 @@
   width: 95%;
   margin: 0;
   padding: 0;
+  margin-bottom: 60px;
   /* height: fit-content; */
-  margin-bottom: 110px;
 }
 
 @media (max-width: 1200px) {

@@ -6,9 +6,10 @@
   justify-content: start;
   margin: 0;
   padding: 0;
-  /* height: 100vh; */
-  height: 100%;
-  margin-top: 80px;
+  position: fixed;
+  top: 85px;
+  left: 0;
+  height: 200px;
 }
 
 .notification {

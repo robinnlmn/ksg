@@ -442,7 +442,7 @@ function Work() {
       )}
 
       {openWork && !isMobile ? (
-        <Draggable axis="both" positionOffset={{ x: 0, y: 0 }}>
+        <Draggable axis="both" positionOffset={{ x: -75, y: -75 }}>
           <div className={styles.fs}>
             <div className={[styles.header, styles.draghandle].join(" ")}>
               <div className={styles.buttons}>
@@ -574,7 +574,8 @@ function Work() {
         <></>
       )}
 
-      <p className={styles.currentTime}>{currentTime}</p>
+      <p className={styles.currentTime}>10:10:00</p>
+      {/* <p className={styles.currentTime}>{currentTime}</p> */}
       {/* <img src="/images/finder.png" width={64} height={64} onDoubleClick={() => { window.location = "/bamboozle" }} /> */}
     </div>
   );
