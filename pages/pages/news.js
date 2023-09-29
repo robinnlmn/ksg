@@ -1,39 +1,46 @@
-import React, { useEffect } from "react";
+import React from "react";
+import CountdownNotification from "./components/CountdownNotification";
 import styles from "../../styles/News.module.css";
 
 function News() {
   return (
     <div className={styles.news}>
       <div className={styles.notification} id="new">
-        <img src="/images/ksg4eblue.png" />
+        <img src="/images/ksg4eblue.png" alt="Notification" />
         <div>
-          <p>
-            <p>S¥DE</p>
-            <p>now</p>
-          </p>
-          <p>COLLECTION DROPPING</p>
+          <div>
+            <div className={styles.notificationTop}>
+              <p>S¥DE</p>
+              <CountdownNotification releaseTime="2023-09-28T13:31:00Z" />
+            </div>
+            <p>COLLECTION DROPPING</p>
+          </div>
         </div>
       </div>
 
       <div className={styles.notification}>
-        <img src="/images/ksg4e.png" />
+        <img src="/images/ksg4e.png" alt="Notification" />
         <div>
-          <p>
-            <p>SEX</p>
-            <p>never</p>
-          </p>
-          <p>YANG LOST HIS VIRGINITY</p>
+          <div>
+            <div className={styles.notificationTop}>
+              <p>TEST</p>
+              <CountdownNotification releaseTime="2023-09-28T13:30:00Z" />
+            </div>
+            <p>YANG LOST HIS VIRGINITY</p>
+          </div>
         </div>
       </div>
 
       <div className={styles.notification}>
-        <img src="/images/OundK.jpg" />
+        <img src="/images/OundK.jpg" alt="Notification" />
         <div>
-          <p>
-            <p>KSG4E</p>
-            <p>20m ago</p>
-          </p>
-          <p>NEW RELEASE BY KSG</p>
+          <div>
+            <div className={styles.notificationTop}>
+              <p>KSG4E</p>
+              <CountdownNotification releaseTime="2023-09-28T13:30:00Z" />
+            </div>
+            <p>NEW RELEASE BY KSG</p>
+          </div>
         </div>
       </div>
     </div>

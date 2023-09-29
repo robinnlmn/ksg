@@ -34,18 +34,26 @@
   padding: 0;
 }
 
-.notification div p:first-child {
-  font-weight: 700;
-  display: flex;
-  justify-content: space-between;
-}
-
 .notification div p:last-child {
   font-weight: 400;
 }
 
 .notification div p:first-child p {
   /* font-weight: 500; */
+  margin-right: 20px;
+}
+
+.notificationTop {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+.notificationTop p {
+  font-weight: 700;
+}
+
+.notificationTop p:last-child {
   margin-right: 20px;
 }
 
