@@ -1,5 +1,5 @@
 import React from "react";
-import CountdownNotification from "./components/CountdownNotification";
+import CountdownNotification from "../../components/CountdownNotification";
 import styles from "../../styles/News.module.css";
 
 function News() {
