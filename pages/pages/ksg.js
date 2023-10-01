@@ -12,63 +12,63 @@ function Work() {
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
           created: "30/05/23",
-          link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
+          link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=ffaae81380e84990",
         },
         {
           name: "CAROL.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
           created: "30/05/23",
-          link: "https://open.spotify.com/track/7ixHDGkDq4mR0JbrtRn0Ue?si=5d8a28a24b86411a",
+          link: "https://open.spotify.com/track/7ixHDGkDq4mR0JbrtRn0Ue?si=99d546037a364f0e",
         },
         {
           name: "WALK OF SHAME.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
           created: "30/05/23",
-          link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
+          link: "https://open.spotify.com/track/5u5hPMWVIBKCLfiHv5gis0?si=fabbd52c5aea4303",
         },
         {
           name: "OMDS.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
           created: "30/05/23",
-          link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
+          link: "https://open.spotify.com/track/4dtMD5DeQkv8qugsTzK56e?si=932ad0e65682446d",
         },
         {
           name: "COMPLAINT?.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
           created: "30/05/23",
-          link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
+          link: "https://open.spotify.com/track/5ujKxEBXP3RHnrFA8D8BPQ?si=076ebfc586824107",
         },
         {
           name: "BAPES.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
           created: "30/05/23",
-          link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
+          link: "https://open.spotify.com/track/5T6YeZ6G2TixvEpl3bEPre?si=278b17b7fb204245",
         },
         {
           name: "THE ALCHEMIST.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
           created: "30/05/23",
-          link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
+          link: "https://open.spotify.com/track/32x0rw83FhcDnWRvnCwqCq?si=ceb6a1d52d95449e",
         },
         {
           name: "HOMIES BEGGED.wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
           created: "30/05/23",
-          link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
+          link: "https://open.spotify.com/track/2gfAes9gEk7ABJTlC9DqgJ?si=f629e941ccd548ad",
         },
         {
-          name: "BAPES.wav",
+          name: "ITS US (BONUS).wav",
           img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
           type: "WAV Audio File",
           created: "30/05/23",
-          link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
+          link: "https://open.spotify.com/track/5kZUHS4u8geMU7b4LAnw1a?si=806524242afb471f",
         },
       ],
     },
@@ -183,18 +183,18 @@ function Work() {
   ]);
   const [dataMerch, setDataMerch] = useState([
     {
-      name: "HOMIES BEGGED.mp4",
-      img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
+      name: "COMPLAINT? - SINGLE VERSION.mp4",
+      img: "https://i.scdn.co/image/ab67616d00001e0214a6c71ea8b64d6d27cace75",
       type: "MP4 Audio",
       created: new Date(2023, 4, 30).toLocaleDateString(),
-      link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
+      link: "https://open.spotify.com/intl-de/track/7xBSGqjwzhN485qZmbdYba?si=ce1f9f123a554b95",
     },
     {
-      name: "BAPES.mp4",
-      img: "https://i.scdn.co/image/ab67616d00001e02b4e42d88151d5246816fe287",
-      type: "MP4 Audio",
-      created: new Date(2023, 4, 30).toLocaleDateString(),
-      link: "https://open.spotify.com/track/7hThuS7hEVwH9N2semO4rr?si=5cc68b09711347fd",
+      name: "yang tweaking.jpg",
+      img: "/images/member/yang.jpg",
+      type: "JPG Image",
+      created: "-",
+      link: "/images/member/yang.jpg",
     },
   ]);
   const [openWork, setOpenWork] = useState(false);
@@ -215,6 +215,16 @@ function Work() {
   const [selectedFileMerch, setSelectedFileMerch] = useState(0);
 
   const fileMerch = dataMerch[currentFileMerch];
+
+  const [isDraggable, setIsDraggable] = useState(true);
+
+  const handleMouseDown = () => {
+    setIsDraggable(true);
+  };
+
+  const handleMouseUp = () => {
+    setIsDraggable(false);
+  };
 
   function closeButtonWork() {
     setCurrentFolder(0);
@@ -373,7 +383,7 @@ function Work() {
                 </div>
                 <p>DATA</p>
               </div>
-              <div className={styles.content}>
+              <div className={styles.content} data-gridless="true">
                 <div className={styles.files}>
                   {dataMerch.map((item, index) => {
                     const fileClass =
@@ -393,7 +403,7 @@ function Work() {
                   })}
                 </div>
 
-                <div className={styles.preview}>
+                <div className={styles.preview} data-centered="true">
                   <img src={fileMerch.img} alt="img" className={styles.image} />
                   <p className={styles.filename}>{fileMerch.name}</p>
                   <p>{fileMerch.type}</p>
@@ -424,15 +434,49 @@ function Work() {
 
       {!isMobile ? (
         <div className={styles.appgrid}>
-          <Draggable axis="both">
-            <div onDoubleClick={() => setOpenWork(true)}>
-              <img src="/images/finder.png" width={64} height={64} />
+          <Draggable axis="both" disabled={!isDraggable}>
+            <div
+              onDoubleClick={() => setOpenWork(true)}
+              onMouseDown={handleMouseDown}
+              onMouseUp={handleMouseUp}
+            >
+              <img
+                src="/images/finder.png"
+                width={64}
+                height={64}
+                alt="Finder"
+                style={{
+                  userDrag: "none",
+                  WebkitUserDrag: "none",
+                  userSelect: "none",
+                  MozUserSelect: "none",
+                  WebkitUserSelect: "none",
+                  msUserSelect: "none",
+                }}
+              />
               <p>MUSIC</p>
             </div>
           </Draggable>
-          <Draggable axis="both">
-            <div onDoubleClick={() => setOpenMerch(true)}>
-              <img src="/images/finder.png" width={64} height={64} />
+          <Draggable axis="both" disabled={!isDraggable}>
+            <div
+              onDoubleClick={() => setOpenMerch(true)}
+              onMouseDown={handleMouseDown}
+              onMouseUp={handleMouseUp}
+            >
+              <img
+                src="/images/finder.png"
+                width={64}
+                height={64}
+                alt="Finder"
+                style={{
+                  userDrag: "none",
+                  WebkitUserDrag: "none",
+                  userSelect: "none",
+                  MozUserSelect: "none",
+                  WebkitUserSelect: "none",
+                  msUserSelect: "none",
+                }}
+              />
               <p>DATA</p>
             </div>
           </Draggable>
@@ -528,10 +572,10 @@ function Work() {
                 <button onClick={() => minimizeButtonMerch()}></button>
                 <button></button>
               </div>
-              <p>MERCH</p>
+              <p>DATA</p>
             </div>
-            <div className={styles.content}>
-              <div className={styles.files}>
+            <div className={styles.content} data-gridless="true">
+              <div className={styles.files} data-gridless="true">
                 {dataMerch.map((item, index) => {
                   const fileClass =
                     index === selectedFileMerch ? styles.selectedfile : "";
@@ -550,7 +594,7 @@ function Work() {
                 })}
               </div>
 
-              <div className={styles.preview}>
+              <div className={styles.preview} data-centered="true">
                 <img src={fileMerch.img} alt="img" className={styles.image} />
                 <p className={styles.filename}>{fileMerch.name}</p>
                 <p>{fileMerch.type}</p>
@@ -563,7 +607,7 @@ function Work() {
                 <div className={styles.seperator}></div>
                 <p className={styles.filelink}>
                   <strong>LINK </strong>{" "}
-                  <a href={fileMerch.link}>{fileMerch.name}</a>
+                  <a href={fileMerch.link}>{fileMerch.link}</a>
                 </p>
                 {fileMerch.embed}
               </div>
@@ -574,8 +618,8 @@ function Work() {
         <></>
       )}
 
-      <p className={styles.currentTime}>10:10:00</p>
-      {/* <p className={styles.currentTime}>{currentTime}</p> */}
+      {/* <p className={styles.currentTime}>10:10:00</p> */}
+      <p className={styles.currentTime}>{currentTime}</p>
       {/* <img src="/images/finder.png" width={64} height={64} onDoubleClick={() => { window.location = "/bamboozle" }} /> */}
     </div>
   );

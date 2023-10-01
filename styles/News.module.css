@@ -24,7 +24,15 @@
   border-radius: 22.5px;
   font-size: 16px;
   margin-bottom: 7.5px;
+  transition: 250ms;
 }
+
+.notification:hover {
+  transform: scale(1.01);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.33);
+  transition: 250ms;
+}
+
 .notification div {
   width: 100%;
 }

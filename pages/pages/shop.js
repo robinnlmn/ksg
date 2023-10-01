@@ -63,6 +63,22 @@ function Shop() {
       available: true,
       link: "https://buy.stripe.com/test_7sIdSL4p4crj6Ry289",
     },
+    {
+      name: "HOODIE",
+      price: "39.99€",
+      img: "https://d32z0ut2mdx6xx.cloudfront.net/eyJidWNrZXQiOiJ1bmdlci5zdGFnZSIsImtleSI6Im1lZGlhXC9pbWFnZVwvNTFcL2UyXC9mZlwvMjEwMDAwNjEzMzkxMl8yMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImhlaWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIn0sImZsYXR0ZW4iOnsiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19LCJqcGVnIjp7InF1YWxpdHkiOjkwLCJmb3JjZSI6dHJ1ZX19fQ==",
+      type: "hoodie",
+      available: true,
+      link: "https://buy.stripe.com/test_7sIdSL4p4crj6Ry289",
+    },
+    {
+      name: "HOODIE",
+      price: "39.99€",
+      img: "https://d32z0ut2mdx6xx.cloudfront.net/eyJidWNrZXQiOiJ1bmdlci5zdGFnZSIsImtleSI6Im1lZGlhXC9pbWFnZVwvNTFcL2UyXC9mZlwvMjEwMDAwNjEzMzkxMl8yMC5wbmciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjI0MDAsImhlaWdodCI6MjQwMCwiZml0IjoiaW5zaWRlIn0sImZsYXR0ZW4iOnsiYmFja2dyb3VuZCI6eyJyIjoyNTUsImciOjI1NSwiYiI6MjU1LCJhbHBoYSI6MX19LCJqcGVnIjp7InF1YWxpdHkiOjkwLCJmb3JjZSI6dHJ1ZX19fQ==",
+      type: "hoodie",
+      available: true,
+      link: "https://buy.stripe.com/test_7sIdSL4p4crj6Ry289",
+    },
   ]);
 
   const [modalItem, setModalItem] = useState(0);

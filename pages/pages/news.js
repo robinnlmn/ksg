@@ -11,7 +11,7 @@ function News() {
           <div>
             <div className={styles.notificationTop}>
               <p>S¥DE</p>
-              <CountdownNotification releaseTime="2023-09-28T13:31:00Z" />
+              <CountdownNotification releaseTime="2024-10-01T13:23:00Z" />
             </div>
             <p>COLLECTION DROPPING</p>
           </div>
@@ -19,7 +19,7 @@ function News() {
       </div>
 
       <div className={styles.notification}>
-        <img src="/images/KSG4E.png" alt="Notification" />
+        <img src="/images/KSG4Eblue.png" alt="Notification" />
         <div>
           <div>
             <div className={styles.notificationTop}>
@@ -37,7 +37,7 @@ function News() {
           <div>
             <div className={styles.notificationTop}>
               <p>KSG4E</p>
-              <CountdownNotification releaseTime="2023-09-28T13:30:00Z" />
+              <CountdownNotification releaseTime="2023-09-21T13:30:00Z" />
             </div>
             <p>NEW RELEASE BY KSG</p>
           </div>

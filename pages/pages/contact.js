@@ -2,11 +2,11 @@ import React from "react";
 import styles from "../../styles/Home.module.css";
 
 function Contact() {
-  function resizeTextArea() {
-    const textArea = document.getElementById("textarea");
+  // function resizeTextArea() {
+  //   const textArea = document.getElementById("textarea");
 
-    textArea.style.height = "auto";
-  }
+  //   textArea.style.height = "auto";
+  // }
 
   return (
     <div className={styles.contact}>
@@ -43,7 +43,7 @@ function Contact() {
             required
             placeholder="your message"
             id="textarea"
-            onInput={() => resizeTextArea()}
+            // onInput={() => resizeTextArea()}
           ></textarea>
         </div>
         <button type="submit">Send</button>
