@@ -6,7 +6,7 @@ function News() {
   return (
     <div className={styles.news}>
       <div className={styles.notification} id="new">
-        <img src="/images/ksg4eblue.png" alt="Notification" />
+        <img src="/images/KSG4Eblue.png" alt="Notification" />
         <div>
           <div>
             <div className={styles.notificationTop}>
@@ -19,7 +19,7 @@ function News() {
       </div>
 
       <div className={styles.notification}>
-        <img src="/images/ksg4e.png" alt="Notification" />
+        <img src="/images/KSG4E.png" alt="Notification" />
         <div>
           <div>
             <div className={styles.notificationTop}>
